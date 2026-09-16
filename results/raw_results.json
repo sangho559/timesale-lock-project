@@ -1,0 +1,74 @@
+{
+  "no-lock": {
+    "endpoint": "no-lock",
+    "initial_stock": 100,
+    "concurrent_users": 500,
+    "total_elapsed_sec": 14.0234,
+    "tps": 35.65,
+    "success_count": 493,
+    "out_of_stock_count": 7,
+    "retry_exhausted_count": 0,
+    "network_failed_count": 0,
+    "final_stock": 8,
+    "expected_stock": -393,
+    "consistency_ok": false,
+    "total_retries": 0,
+    "avg_retry_per_request": 0.0,
+    "response_time_ms": {
+      "p50": 38.74682000002849,
+      "p95": 417.7147469999909,
+      "p99": 727.3078790000227,
+      "min": 1.435180999919794,
+      "max": 1271.55535899999,
+      "mean": 109.97
+    }
+  },
+  "pessimistic": {
+    "endpoint": "pessimistic",
+    "initial_stock": 100,
+    "concurrent_users": 500,
+    "total_elapsed_sec": 13.4357,
+    "tps": 37.21,
+    "success_count": 100,
+    "out_of_stock_count": 400,
+    "retry_exhausted_count": 0,
+    "network_failed_count": 0,
+    "final_stock": 0,
+    "expected_stock": 0,
+    "consistency_ok": true,
+    "total_retries": 0,
+    "avg_retry_per_request": 0.0,
+    "response_time_ms": {
+      "p50": 615.4970669999784,
+      "p95": 2563.4818730000006,
+      "p99": 5450.3660670000045,
+      "min": 0.4698740000321777,
+      "max": 10016.675297000005,
+      "mean": 862.87
+    }
+  },
+  "optimistic": {
+    "endpoint": "optimistic",
+    "initial_stock": 100,
+    "concurrent_users": 500,
+    "total_elapsed_sec": 13.1917,
+    "tps": 37.9,
+    "success_count": 100,
+    "out_of_stock_count": 400,
+    "retry_exhausted_count": 0,
+    "network_failed_count": 0,
+    "final_stock": 0,
+    "expected_stock": 0,
+    "consistency_ok": true,
+    "total_retries": 111,
+    "avg_retry_per_request": 0.222,
+    "response_time_ms": {
+      "p50": 114.51797600000191,
+      "p95": 1236.7956419999473,
+      "p99": 2346.227788999954,
+      "min": 0.30657699994662835,
+      "max": 3188.516957000047,
+      "mean": 311.926
+    }
+  }
+}
